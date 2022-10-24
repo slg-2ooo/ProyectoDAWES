@@ -1,2 +1,14 @@
 <?php phpversion();
 
+use Sergiolg\Dawes\controller\Connection;
+
+$autoloader = require_once 'autoload.php';
+echo "<pre>";
+print_r($autoloader);
+
+$connection = new Connection($autoloader);
+
+$response = $connection->handleRequest($GLOBALS);
+$connection->sendResponse($response);
+
+$connection->terminate();
