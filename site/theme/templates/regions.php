@@ -1,13 +1,13 @@
 <?php
 
 $regions = <<<EOD
-<div id="header">
+<div id="region-header">
     $header;
 </div>
-<div id="content">
+<div id="region-content">
     $content;
 </div>
-<div id="footer">
+<div id="region-footer">
     $footer;
 </div>
 EOD;

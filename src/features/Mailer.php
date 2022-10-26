@@ -11,14 +11,14 @@ class Mailer {
         $remitente = "Sergio LG";
         $asunto = 'Su cuenta ha sido creada';
         $enlaceActivacionCuenta = "http://" . $_SERVER['HTTP_HOST'] . "/activar-cuenta";
-        $mensaje = <<<EOT
+        $mensaje = <<<EOD
 <p>La creacion de su cuenta se a realizado con exito</p>
 <p>
 Puede activarla pulsando el siguiente enlace:
 <a href="$enlaceActivacionCuenta">Activar cuenta</a>
 </p>
 <p>Atentamente $remitente</p>
-EOT;
+EOD;
 
 
         $mail = new PHPMailer\PHPMailer();

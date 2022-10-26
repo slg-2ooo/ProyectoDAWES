@@ -2,26 +2,30 @@
 
 namespace Sergiolg\Dawes\controller;
 
+use Sergiolg\Dawes\core\Render;
+
 class Connection {
 
-    private Composer\Autoload\ClassLoader $autoload;
-
     function __construct($autoload) {
-        $this->$autoload = $autoload;
+        //$this->$autoload = $autoload;
     }
 
     function handleRequest($globals) {
-        print_r($globals);
+        //print_r($globals);
         //print_r($this->$autoload);
-        return "Respuesta";
+
+        $render = new Render();
+        $markup = $render->generateMarkup();
+
+        return $markup;
     }
 
     function sendResponse($response) {
-        print_r($response);
+        print implode($response);
     }
 
     function terminate() {
-        echo "Conexion terminada";
+        echo "</br>Conexion terminada";
     }
 
 }
