@@ -21,7 +21,7 @@ class Connection {
     }
 
     function sendResponse($response) {
-        print implode($response);
+        print serialize($response);
     }
 
     function terminate() {
