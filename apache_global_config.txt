@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+
+	# En la conf global de apache
+	#LoadModule rewrite_module modules/mod_rewrite.so
+
+	DocumentRoot "C:\xampp\htdocs\DAWES"
+	ServerName dawes.es
+	<Directory "C:\xampp\htdocs\DAWES">
+		Options -Indexes 
+		Options FollowSymLinks
+    		AllowOverride All
+    		Require all granted
+	</Directory>
+
+</VirtualHost>
