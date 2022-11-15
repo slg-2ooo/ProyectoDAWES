@@ -1,0 +1,8 @@
+access:
+  title: "Acceso"
+  description: "Todos los visitantes tienen acceso"
+
+administrator:
+  title: "Administracion"
+  description: "Permisos de administración"
+  

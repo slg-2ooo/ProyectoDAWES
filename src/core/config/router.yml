@@ -1,0 +1,11 @@
+home:
+  path: /
+  permission: 'access'
+
+login:
+  path: /user/login
+  permission: 'access'
+
+admin:
+  path: /admin
+  permission: 'administrator'

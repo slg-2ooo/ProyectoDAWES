@@ -1,8 +1,16 @@
+ErrorDocument 404 /error404
+ErrorDocument 403 /error403
+ErrorDocument 500 /error500.html
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
     RewriteRule ^index\.php$ - [L]
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteCond %{REQUEST_URI} !/enconstruccion.html$
+    RewriteRule .* /enconstruccion.html [L]
+
     RewriteRule . /index.php [L]
 </IfModule>
