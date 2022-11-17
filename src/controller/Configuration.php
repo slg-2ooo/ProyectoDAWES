@@ -4,6 +4,7 @@ namespace Sergiolg\Dawes\controller;
 
 class Configuration {
 
+
     static function getConfig() {
         include __DIR__ . "/../config.php";
         return $config;

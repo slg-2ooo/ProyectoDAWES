@@ -1,5 +1,8 @@
 <?php
 
+require_once("regions.php");
+require_once("includes.php");
+
 $page = <<<EOD
 <!DOCTYPE html>
 <html lang="en">
@@ -8,10 +11,10 @@ $page = <<<EOD
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    $includes;
+    $includes
 </head>
 <body>
-    $regions;
+    $regions
 </body>
 </html>
 EOD;
