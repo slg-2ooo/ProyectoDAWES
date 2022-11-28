@@ -2,7 +2,7 @@
 
 namespace Sergiolg\Dawes\controller;
 
-use Sergiolg\Dawes\core\Render;
+use Sergiolg\Dawes\core\Router;
 
 class Connection {
 
@@ -14,10 +14,10 @@ class Connection {
         //print_r($globals);
         //print_r($this->$autoload);
 
-        $render = new Render();
-        $markup = $render->generateMarkup();
+        $router = new Router();
+        $route = $router->getRoute();
 
-        return $markup;
+        return $route;
     }
 
     function sendResponse($response) {

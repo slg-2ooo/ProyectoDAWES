@@ -9,3 +9,11 @@ login:
 admin:
   path: /admin
   permission: 'administrator'
+
+error404:
+  path: /404
+  permission: 'access'
+
+error403:
+  path: /403
+  permission: 'access'
